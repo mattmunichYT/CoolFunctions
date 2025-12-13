@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_pearl",
+      "count": 1
+    },
+    "title": {
+      "text": "§dThe §5Ender§eBow§3 ?",
+      "type": "text"
+    },
+    "description": {
+      "text": "§eObtain §dan §5Ender§eBow",
+      "type": "text"
+    },
+    "background": "minecraft:block/end_stone",
+    "frame": "task",
+    "show_toast": true
+  },
+  "parent": "coolfunctions:coolfunctions",
+  "criteria": {
+    "get_ender_bow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bow",
+            "components": {
+              "minecraft:custom_data": {
+                "ender_bow": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [],
+    "experience": 300
+  }
+}

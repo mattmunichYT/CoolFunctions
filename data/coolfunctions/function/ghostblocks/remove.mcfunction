@@ -1,0 +1,1 @@
+execute anchored eyes at @p run kill @e[type=falling_block,limit=1,sort=nearest,distance=..1]

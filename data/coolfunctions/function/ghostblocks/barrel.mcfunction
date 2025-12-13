@@ -1,0 +1,2 @@
+give @s minecraft:bee_spawn_egg[entity_data={id:"minecraft:falling_block",NoGravity:true,Time:-2147483648,BlockState:{Name:"minecraft:barrel"}},item_name="§6Barrel §2Ghost §6Block"]
+tellraw @p {"text":"§2You've been given a §6Barrel §2Ghost §6Block §2 !"}

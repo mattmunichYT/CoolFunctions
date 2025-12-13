@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:gold_block",
+      "count": 1
+    },
+    "title": {
+      "text": "§2Cool §6Functions",
+      "type": "text"
+    },
+    "description": {
+      "text": "§2Cool §6Functions §edefault advancement",
+      "type": "text"
+    },
+    "background": "minecraft:block/end_stone",
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "join": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+execute at @a run kill @e[type=falling_block]

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bow",
+      "components": {
+        "minecraft:custom_data": {}
+      },
+      "count": 1
+    },
+    "title": {
+      "text": "§eBetter than an §5Ender Pearl§e!",
+      "type": "text"
+    },
+    "description": {
+      "text": "Use an Ender Bow",
+      "type": "text",
+      "color": "#e392fe"
+    },
+    "background": "minecraft:block/end_stone",
+    "frame": "goal",
+    "show_toast": true
+  },
+  "parent": "coolfunctions:ender_bow/get",
+  "criteria": {
+    "use_ender_bow": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": "minecraft:bow",
+          "components": {
+            "minecraft:custom_data": {
+              "ender_bow": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

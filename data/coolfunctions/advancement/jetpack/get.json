@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_chestplate",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            2
+          ]
+        }
+      },
+      "count": 1
+    },
+    "title": {
+      "text": "§2I've §o§ealways§r§2 wanted to §6§lfly§r§2 !",
+      "type": "text"
+    },
+    "description": {
+      "text": "§eObtain §2a §6Jet§4Pack",
+      "type": "text"
+    },
+    "background": "minecraft:block/end_stone",
+    "frame": "task",
+    "show_toast": true
+  },
+  "parent": "coolfunctions:coolfunctions",
+  "criteria": {
+    "get_jetpack": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_chestplate",
+            "components": {
+              "minecraft:custom_data": {
+                "jetpack": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "loot": [],
+    "experience": 300
+  }
+}

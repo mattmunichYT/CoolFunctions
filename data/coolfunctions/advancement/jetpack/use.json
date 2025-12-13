@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:feather",
+      "count": 1
+    },
+    "title": {
+      "text": "§2Am I §6§lflying§r§2 !?",
+      "type": "text"
+    },
+    "description": {
+      "text": "§eUse §2the §6Jet§4Pack §2to §efly",
+      "type": "text"
+    },
+    "background": "minecraft:block/end_stone",
+    "frame": "goal",
+    "show_toast": true
+  },
+  "parent": "coolfunctions:jetpack/get",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
