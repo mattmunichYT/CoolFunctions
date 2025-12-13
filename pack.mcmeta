@@ -3,7 +3,7 @@
     "description": "§2Cool §6Functions §8v1.2 MC 1.21.6-1.21.11",
     "pack_format": 88,
     "supported_formats": {
-      "min_inclusive": 80.0,
+      "min_inclusive": 80,
       "max_inclusive": 94.1
     }
   }
