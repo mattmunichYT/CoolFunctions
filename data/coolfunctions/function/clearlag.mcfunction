@@ -1,2 +1,2 @@
 kill @e[type=item]
-tellraw @a "§c[§4ClearLag§c] §6ClearLag effectué !"
+tellraw @a "§e[§2§lCF§r§e] §eCleared items."
