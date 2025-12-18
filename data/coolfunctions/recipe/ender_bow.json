@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coolfunctions",
+  "category": "equipment",
+  "pattern": [
+    " E ",
+    "EBE",
+    " E "
+  ],
+  "key": {
+    "E": "minecraft:ender_pearl",
+    "B": "minecraft:bow"
+  },
+  "result": {
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:item_model": "coolfunctions:ender_bow",
+      "minecraft:item_name": [
+        {"color":"#F3FF87","text":"E"},
+        {"color":"#F0EC96","text":"n"},
+        {"color":"#EDD8A5","text":"d"},
+        {"color":"#EAC5B4","text":"e"},
+        {"color":"#E7B1C3","text":"r "},
+        {"color":"#E49ED2","text":"B"},
+        {"color":"#E18AE1","text":"o"},
+        {"color":"#DB63FF","text":"w"}
+      ],
+      "minecraft:custom_data": {
+        "ender_bow": true
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

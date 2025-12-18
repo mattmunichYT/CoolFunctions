@@ -1,0 +1,17 @@
+#Add kill tag to items
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run tag @e[distance=..1,type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] add kill
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run tag @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] add kill
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] run tag @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] add kill
+
+#Summon effects
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run particle minecraft:electric_spark ~ ~ ~ 0 0 0 2 100 normal
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run playsound minecraft:block.redstone_torch.burnout block @a[distance=..10]
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 2 1 normal
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run playsound entity.generic.explode block @a[distance=..10]
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run particle minecraft:cloud ~ ~ ~ 0 0 0 0.01 1000 normal
+
+#Summon Jetpack
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run summon item ~ ~ ~ {Item:{id:"leather_chestplate",count:1,components:{"minecraft:custom_data":{jetpack:1b,fuel:1200,jetpackMaxFuel:1200},"minecraft:item_name":[{"color":"#FFF700","text":"J"},{"color":"#FFD400","text":"e"},{"color":"#FFB000","text":"t "},{"color":"#FF8D00","text":"P"},{"color":"#FF6A00","text":"a"},{"color":"#FF4700","text":"c"},{"color":"#FF0000","text":"k"}]}}}
+
+#Kill craft items
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",count:5}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:coal_block",count:3}}] if entity @e[distance=..1,type=item,nbt={Item:{id:"minecraft:leather_chestplate",count:1}}] run kill @e[tag=kill,type=item,distance=..2]

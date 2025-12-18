@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coolfunctions",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "ICI",
+    "FFF"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:leather_chestplate",
+    "F": "minecraft:fire_charge"
+  },
+  "result": {
+    "id": "minecraft:leather_chestplate",
+    "components": {
+      "minecraft:item_name": [
+        {"color":"#FFF700","text":"J"},
+        {"color":"#FFD400","text":"e"},
+        {"color":"#FFB000","text":"t "},
+        {"color":"#FF8D00","text":"P"},
+        {"color":"#FF6A00","text":"a"},
+        {"color":"#FF4700","text":"c"},
+        {"color":"#FF0000","text":"k"},
+        "  §7| §6Tier 4"
+    ],
+      "minecraft:custom_data": {
+        "jetpack": true,
+        "jetpackFuel": 54000,
+        "jetpackMaxFuel": 54000,
+        "jetpackTier": 4
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}
