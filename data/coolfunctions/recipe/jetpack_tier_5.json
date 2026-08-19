@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "coolfunctions",
+  "group": "coolfunctions:jetpack",
   "category": "equipment",
   "pattern": [
     "III",
@@ -10,7 +10,7 @@
   "key": {
     "I": "minecraft:iron_ingot",
     "C": "minecraft:leather_chestplate",
-    "F": "minecraft:magma_cream"
+    "F": "minecraft:dragon_breath"
   },
   "result": {
     "id": "minecraft:leather_chestplate",
@@ -24,13 +24,14 @@
         {"color":"#FF4700","text":"c"},
         {"color":"#FF0000","text":"k"},
         "  §7| §5Tier 5"
-    ],
+      ],
       "minecraft:custom_data": {
         "jetpack": true,
         "jetpackFuel": 72000,
         "jetpackMaxFuel": 72000,
         "jetpackTier": 5
-      }
+      },
+      "minecraft:dyed_color": [0.83, 0.34, 1]
     },
     "count": 1
   },

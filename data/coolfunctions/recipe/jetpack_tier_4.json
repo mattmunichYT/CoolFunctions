@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "coolfunctions",
+  "group": "coolfunctions:jetpack",
   "category": "equipment",
   "pattern": [
     "III",
@@ -24,13 +24,14 @@
         {"color":"#FF4700","text":"c"},
         {"color":"#FF0000","text":"k"},
         "  §7| §6Tier 4"
-    ],
+      ],
       "minecraft:custom_data": {
         "jetpack": true,
         "jetpackFuel": 54000,
         "jetpackMaxFuel": 54000,
         "jetpackTier": 4
-      }
+      },
+      "minecraft:dyed_color": [0.85, 0.31, 0]
     },
     "count": 1
   },

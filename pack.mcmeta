@@ -1,9 +1,9 @@
 {
   "pack": {
-    "description": "§2Cool §6Functions §8v1.2 MC 1.21.6-1.21.11",
+    "description": "§2Cool §6Functions §av1.5.3 §7- §8MC 1.21.6-26.3 Snapshots",
     "pack_format": 80,
-    "supported_formats": [80, 94],
+    "supported_formats": [80, 115],
     "min_format": 80,
-    "max_format": 95
+    "max_format": 115
   }
 }

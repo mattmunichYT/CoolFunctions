@@ -1,29 +1,31 @@
-scoreboard objectives add useGrap minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
-scoreboard objectives add hasJetPack dummy
-scoreboard objectives add jetpackFuel dummy
-scoreboard objectives add jetpackMax dummy
-scoreboard objectives add jetpackBar dummy
-scoreboard objectives add jetpackTemp dummy
-scoreboard objectives add jetpackConst dummy
-scoreboard objectives add jetpackItemFuel dummy
-team add noCollisions.COOLFUNCTIONS {"text":"Cool Function's no Collisions Team"}
+scoreboard objectives add cf.sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cf.jetpack.fuel dummy
+scoreboard objectives add cf.jetpack.fuel.max dummy
+scoreboard objectives add cf.jetpack.bar dummy
+scoreboard objectives add cf.jetpack.temp dummy
+scoreboard objectives add cf.const dummy
+scoreboard objectives add cf.playerY dummy
+scoreboard objectives add cf.groundY dummy
+scoreboard objectives add cf.heightAboveGround dummy
+
+team add noCollisions.COOLFUNCTIONS {text:"Cool Function's no Collisions Team"}
 team modify noCollisions.COOLFUNCTIONS collisionRule never
 team modify noCollisions.COOLFUNCTIONS seeFriendlyInvisibles false
 team modify noCollisions.COOLFUNCTIONS friendlyFire true
 team modify noCollisions.COOLFUNCTIONS nametagVisibility never
 scoreboard objectives add morphMobHealth dummy
-tellraw @a[gamemode=creative] "§x§F§C§D§0§5§C§l[C§x§D§5§D§5§7§6§lo§x§A§E§D§9§9§1§lo§x§8§6§D§E§A§B§ll§x§5§F§E§2§C§5§lF§x§6§6§E§6§A§E§lu§x§6§D§E§A§9§6§ln§x§7§3§E§D§7§F§lc§x§7§A§F§1§6§7§lt§x§7§A§F§1§6§7§li§x§7§A§F§1§6§7§lo§x§7§A§F§1§6§7§ln§x§7§A§F§1§6§7§ls]§r §aData Pack loaded successfully!"
-tellraw @a[gamemode=spectator] "§x§F§C§D§0§5§C§l[C§x§D§5§D§5§7§6§lo§x§A§E§D§9§9§1§lo§x§8§6§D§E§A§B§ll§x§5§F§E§2§C§5§lF§x§6§6§E§6§A§E§lu§x§6§D§E§A§9§6§ln§x§7§3§E§D§7§F§lc§x§7§A§F§1§6§7§lt§x§7§A§F§1§6§7§li§x§7§A§F§1§6§7§lo§x§7§A§F§1§6§7§ln§x§7§A§F§1§6§7§ls]§r §aData Pack loaded successfully!"
+tellraw @a[gamemode=creative] [{text:"C","color":"#D5D576","bold":true},{text:"o","color":"#AED991","bold":true},{text:"o","color":"#86DEAB","bold":true},{text:"l","color":"#73E0B8","bold":true},{text:"F","color":"#5FE2C5","bold":true},{text:"u","color":"#66E6AE","bold":true},{text:"n","color":"#6DEA96","bold":true},{text:"c","color":"#73ED7F","bold":true},{text:"t","color":"#7AF167","bold":true},{text:"i","color":"#7AF167","bold":true},{text:"o","color":"#7AF167","bold":true},{text:"n","color":"#7AF167","bold":true},{text:"s","color":"#7AF167","bold":true},{text:" >> ","bold":true,"color":"dark_gray"}, "§aData Pack loaded successfully!"]
+tellraw @a[gamemode=spectator] [{text:"C","color":"#D5D576","bold":true},{text:"o","color":"#AED991","bold":true},{text:"o","color":"#86DEAB","bold":true},{text:"l","color":"#73E0B8","bold":true},{text:"F","color":"#5FE2C5","bold":true},{text:"u","color":"#66E6AE","bold":true},{text:"n","color":"#6DEA96","bold":true},{text:"c","color":"#73ED7F","bold":true},{text:"t","color":"#7AF167","bold":true},{text:"i","color":"#7AF167","bold":true},{text:"o","color":"#7AF167","bold":true},{text:"n","color":"#7AF167","bold":true},{text:"s","color":"#7AF167","bold":true},{text:" >> ","bold":true,"color":"dark_gray"}, "§aData Pack loaded successfully!"]
+
 
 # constants for bar computation (1..10)
-scoreboard players set const1 jetpackConst 1
-scoreboard players set const2 jetpackConst 2
-scoreboard players set const3 jetpackConst 3
-scoreboard players set const4 jetpackConst 4
-scoreboard players set const5 jetpackConst 5
-scoreboard players set const6 jetpackConst 6
-scoreboard players set const7 jetpackConst 7
-scoreboard players set const8 jetpackConst 8
-scoreboard players set const9 jetpackConst 9
-scoreboard players set const10 jetpackConst 10
+scoreboard players set const1 cf.const 1
+scoreboard players set const2 cf.const 2
+scoreboard players set const3 cf.const 3
+scoreboard players set const4 cf.const 4
+scoreboard players set const5 cf.const 5
+scoreboard players set const6 cf.const 6
+scoreboard players set const7 cf.const 7
+scoreboard players set const8 cf.const 8
+scoreboard players set const9 cf.const 9
+scoreboard players set const10 cf.const 10

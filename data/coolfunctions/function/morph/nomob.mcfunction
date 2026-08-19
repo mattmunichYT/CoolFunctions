@@ -1,4 +1,4 @@
-tellraw @p[tag=morph] "§x§F§C§D§0§5§C§l[C§x§D§5§D§5§7§6§lo§x§A§E§D§9§9§1§lo§x§8§6§D§E§A§B§ll§x§5§F§E§2§C§5§lF§x§6§6§E§6§A§E§lu§x§6§D§E§A§9§6§ln§x§7§3§E§D§7§F§lc§x§7§A§F§1§6§7§lt§x§7§A§F§1§6§7§li§x§7§A§F§1§6§7§lo§x§7§A§F§1§6§7§ln§x§7§A§F§1§6§7§ls]§r §eNo entity found §7- §cYou'll be visible again in 10 seconds!"
+tellraw @p[tag=morph] [{"text":"C","color":"#D5D576","bold":true},{"text":"o","color":"#AED991","bold":true},{"text":"o","color":"#86DEAB","bold":true},{"text":"l","color":"#73E0B8","bold":true},{"text":"F","color":"#5FE2C5","bold":true},{"text":"u","color":"#66E6AE","bold":true},{"text":"n","color":"#6DEA96","bold":true},{"text":"c","color":"#73ED7F","bold":true},{"text":"t","color":"#7AF167","bold":true},{"text":"i","color":"#7AF167","bold":true},{"text":"o","color":"#7AF167","bold":true},{"text":"n","color":"#7AF167","bold":true},{"text":"s","color":"#7AF167","bold":true},{"text":" >> ","bold":true,"color":"dark_gray"}, "§eNo entity found §7- §cYou'll be visible again in 10 seconds!"]
 effect clear @p[tag=morph] invisibility
 effect clear @p[tag=morph] instant_health
 effect give @p[tag=morph] invisibility 11 2 true

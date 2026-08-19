@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:set_lore",
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    [
+      {"text":"Fuel: ","color":"gray","italic":false},
+      {"score":{"name":"*","objective":"cf.jetpack.fuel"},"color":"yellow","italic":false},
+      {"text":"/","color":"gray","italic":false},
+      {"score":{"name":"*","objective":"cf.jetpack.fuel.max"},"color":"gray","italic":false}
+    ]
+  ],
+  "mode": "replace_all"
+}

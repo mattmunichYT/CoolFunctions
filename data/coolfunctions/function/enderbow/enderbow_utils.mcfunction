@@ -10,7 +10,7 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s as @e[distance=..
 execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s as @e[distance=..1,type=item,nbt={Item:{id:"minecraft:ender_pearl",count:4}}] run playsound entity.generic.explode block @a[distance=..10]
 execute as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] at @s as @e[distance=..1,type=item,nbt={Item:{id:"minecraft:ender_pearl",count:4}}] run particle minecraft:cloud ~ ~ ~ 0 0 0 0.01 1000 normal
 #Summon item
-execute positioned as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] as @e[distance=..1,type=item,nbt={Item:{id:"minecraft:ender_pearl",count:4}}] run summon item ~ ~ ~ {Item:{id:"minecraft:bow",count:1,components:{"minecraft:item_model":"coolfunctions:ender_bow","minecraft:item_name":[{"color":"#F3FF87","text":"E"},{"color":"#F0EC96","text":"n"},{"color":"#EDD8A5","text":"d"},{"color":"#EAC5B4","text":"e"},{"color":"#E7B1C3","text":"r "},{"color":"#E49ED2","text":"B"},{"color":"#E18AE1","text":"o"},{"color":"#DB63FF","text":"w"}],"minecraft:max_damage":500,"minecraft:custom_data":{ender_bow:true}}}}
+execute positioned as @e[type=item,nbt={Item:{id:"minecraft:bow"}}] as @e[distance=..1,type=item,nbt={Item:{id:"minecraft:ender_pearl",count:4}}] run summon item ~ ~ ~ {Item:{id:"minecraft:bow",count:1,components:{"minecraft:item_model":"coolfunctions:ender_bow","minecraft:item_name":[{"color":"#F3FF87",text:"E"},{"color":"#F0EC96",text:"n"},{"color":"#EDD8A5",text:"d"},{"color":"#EAC5B4",text:"e"},{"color":"#E7B1C3",text:"r "},{"color":"#E49ED2",text:"B"},{"color":"#E18AE1",text:"o"},{"color":"#DB63FF",text:"w"}],"minecraft:max_damage":500,"minecraft:custom_data":{ender_bow:true}}}}
 
 #Kill spawn items
 execute positioned as @e[type=item,nbt={Item:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}] run kill @e[tag=killItem,distance=..1]
@@ -22,7 +22,7 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecra
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}] run tag @s remove hasEnderBow
 
 #Bow
-execute as @a[tag=hasEnderBow] run item replace entity @s weapon.offhand with arrow[item_model="coolfunctions:ender_arrow",item_name=[{"color":"#1E14A6","text":"E"},{"color":"#321DAF","text":"n"},{"color":"#4626B8","text":"d"},{"color":"#5A2FC1","text":"e"},{"color":"#6E38CA","text":"r "},{"color":"#8341D3","text":"A"},{"color":"#974ADB","text":"r"},{"color":"#AB53E4","text":"r"},{"color":"#BF5CED","text":"o"},{"color":"#E76EFF","text":"w"}],custom_data={ender_arrow:true}] 1 
+execute as @a[tag=hasEnderBow] run item replace entity @s weapon.offhand with arrow[item_model="coolfunctions:ender_arrow",item_name=[{"color":"#1E14A6",text:"E"},{"color":"#321DAF",text:"n"},{"color":"#4626B8",text:"d"},{"color":"#5A2FC1",text:"e"},{"color":"#6E38CA",text:"r "},{"color":"#8341D3",text:"A"},{"color":"#974ADB",text:"r"},{"color":"#AB53E4",text:"r"},{"color":"#BF5CED",text:"o"},{"color":"#E76EFF",text:"w"}],custom_data={ender_arrow:true}] 1 
 execute as @a[tag=!hasEnderBow] run clear @s minecraft:arrow[minecraft:custom_data={ender_arrow:true}]
 
 execute as @a[nbt={RootVehicle:{Entity:{id:"minecraft:arrow",weapon:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}}}] run advancement grant @s only coolfunctions:ender_bow/use

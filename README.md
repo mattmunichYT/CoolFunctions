@@ -45,7 +45,7 @@
 ## 🚀 Jet Pack
 
 #### Tier 1:
-> - **1 minutes** of fuel
+> - **1 minute** of fuel
 > - **Low** speed
 
 **Craft:**
