@@ -23,10 +23,9 @@
 
 ---
 
-# 🏹 Ender Bow
+## 🏹 Ender Bow
 
-## 📦 Obtaining
-
+### 📦 Obtaining
 
 **Option 1 - Crafting table:**
 
@@ -41,6 +40,7 @@ Drop the following items on the ground:
 
 The Ender Bow recipe will also automatically unlock when you obtain the required materials.
 
+
 ## 🎯 Usage
 
 - Hold **right-click**, just like a normal bow.
@@ -48,7 +48,7 @@ The Ender Bow recipe will also automatically unlock when you obtain the required
 
 ---
 
-# 🚀 Jet Packs
+## 🚀 Jet Packs
 
 The Jet Pack comes in **five tiers**, each providing increased fuel capacity, speed, and maximum altitude.
 
@@ -59,7 +59,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 \*Leaves are not counted as ground.
 ---
 
-## Tier 1
+### Tier 1
 
 - ⛽ **Fuel:** 1 minute
 - ⚡ **Speed:** Low
@@ -71,7 +71,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ---
 
-## Tier 2
+### Tier 2
 
 - ⛽ **Fuel:** 15 minutes
 - ⚡ **Speed:** Medium-low
@@ -83,7 +83,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ---
 
-## Tier 3
+### Tier 3
 
 - ⛽ **Fuel:** 30 minutes
 - ⚡ **Speed:** Medium
@@ -95,7 +95,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ---
 
-## Tier 4
+### Tier 4
 
 - ⛽ **Fuel:** 45 minutes
 - ⚡ **Speed:** Medium-high
@@ -107,7 +107,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ---
 
-## Tier 5
+### Tier 5
 
 - ⛽ **Fuel:** 1 hour
 - ⚡ **Speed:** High
@@ -121,7 +121,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ---
 
-## Creative Jet Pack
+### Creative Jet Pack
 
 A special Jet Pack intended for creative use.
 
@@ -134,7 +134,9 @@ A special Jet Pack intended for creative use.
 /function coolfunctions:give/jetpack
 ```
 
-## 🕹️ Usage
+---
+
+### 🕹️ Usage
 
 - Equip the Jet Pack in your **chestplate slot**.
 - **Sneak** to activate it.
@@ -143,11 +145,11 @@ A special Jet Pack intended for creative use.
 
 ---
 
-# 👤 Morph System
+## 👤 Morph System
 
 > ⚠️ **Experimental:** The Morph System is still experimental and may not work perfectly with every mob (especially big mobs like the Iron Golem).
 
-## 🪄 Morph into a Mob
+### 🪄 Morph into a Mob
 
 ```mcfunction
 /function coolfunctions:morph/<MobName>
@@ -155,7 +157,8 @@ A special Jet Pack intended for creative use.
 
 Replace `<MobName>` with the name of the mob you want to morph into.
 
-## 🔙 Unmorph
+
+### 🔙 Unmorph
 
 ```mcfunction
 /function coolfunctions:unmorph
@@ -163,11 +166,11 @@ Replace `<MobName>` with the name of the mob you want to morph into.
 
 ---
 
-# 👻 Ghost Blocks
+## 👻 Ghost Blocks
 
 Ghost Blocks appear as normal blocks, but you can phase through them.
 
-## 📦 Obtaining
+### 📦 Obtaining
 
 ```mcfunction
 /function coolfunctions:ghostblocks/<BlockName>
@@ -175,11 +178,11 @@ Ghost Blocks appear as normal blocks, but you can phase through them.
 
 Replace `<BlockName>` with the block you want to get the Ghost Block spawn egg for.
 
-## 🧱 Usage
+### 🧱 Usage
 
 > Just spawn it wherever you want
 
-## 🗑️ Removal
+### 🗑️ Removal
 
 **Remove one Ghost Block** (the nearest one):
 ```mcfunction
@@ -199,15 +202,15 @@ Replace `<BlockName>` with the block you want to get the Ghost Block spawn egg f
 
 ---
 
-# ⚙️ Utility Functions
+## ⚙️ Utility Functions
 
 Cool Functions also provides various utility functions that can be accessed directly through Minecraft's `/function` command.
 
-## 🧹 ClearLag
+### 🧹 ClearLag
 
 ClearLag allows you to manually remove dropped items from the world. This can help performance when there's a lot of items on the ground.
 
-### 🗑️ Clear All Ground Items
+#### 🗑️ Clear All Ground Items
 
 ```mcfunction
 /function coolfunctions:clearlag
@@ -217,7 +220,9 @@ This removes dropped item entities from the world(\*).
 
 \*In all the loaded chunks of the world
 
-## 💎 Give Functions
+---
+
+### 💎 Give Functions
 
 **Give an Ender Bow:**
 ```mcfunction
@@ -233,7 +238,7 @@ This removes dropped item entities from the world(\*).
 
 ---
 
-# 📜 Credits & Usage
+## 📜 Credits & Usage
 
 Project is licensed under the [MIT license](https://github.com/mattmunichYT/CoolFunctions/blob/697bf8367043137f645e4f46fba958145599029d/LICENSE)
 
