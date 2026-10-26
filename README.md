@@ -8,7 +8,7 @@
 **CoolFunctions** is a Minecraft **Data Pack** that adds several fun mechanics and useful functions to the game, including:
 
 - 🏹 **Ender Bow** — A custom bow that allows you to teleport to your arrows
-- 🚀 **Jet Packs** — Five tiers of Jet Packs with increasing fuel capacity, speed, and altitude
+- 🚀 **Jet Packs** — Five tiers of Jet Packs with increasing fuel capacity, speed, and altitude, plus adjustable flight modes
 - 👤 **Morph System** *(experimental)* — Transform into different mobs
 - 👻 **Ghost Blocks** — Place phase-through blocks
 - 🧹 **Utility Functions** — Useful utilities such as ClearLag or give (only for administrators)
@@ -20,6 +20,33 @@
 > ⚠️ Reuploading or redistributing this datapack without permission is not allowed.
 >
 > Project is licensed under the [MIT License](https://github.com/mattmunichYT/CoolFunctions/blob/697bf8367043137f645e4f46fba958145599029d/LICENSE)
+
+---
+
+## 📥 Installation
+
+CoolFunctions is available in two forms:
+
+| Format | Where | What you need |
+|---|---|---|
+| **Datapack + Resource Pack** | [Modrinth](https://modrinth.com/datapack/coolfunctions/versions) | Two files: the datapack and the resource pack |
+| **Mod** | [Modrinth](https://modrinth.com/datapack/coolfunctions/versions) or the separate CurseForge project | **One single file** — the datapack and the resource pack combined |
+
+> 💡 The **mod version** has the advantage that you only need to download and install **one file**, since it combines the datapack and the texture pack in one mod.
+
+### 🖥️ Singleplayer
+
+Choose one of the following:
+
+- Install the **datapack + resource pack**, or
+- Install **just the mod**.
+
+### 🌐 Server
+
+Choose one of the following:
+
+- **Datapack on the server only:** install the datapack on the server. Players only have to download the **resource pack/mod** (not the datapack).
+- **Mod on the server:** install the mod on the server. Players only have to download the **resource pack/mod**.
 
 ---
 
@@ -45,6 +72,7 @@ The Ender Bow recipe will also automatically unlock when you obtain the required
 
 - Hold **right-click**, just like a normal bow.
 - You'll follow the arrow until it lands.
+- While shooting, the Ender Bow temporarily uses your **offhand** slot. The item you were holding there (e.g. a shield) is stored and **given back** to you afterwards.
 
 ---
 
@@ -57,11 +85,14 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 > 💡 The altitude limit is measured as the **height above the ground directly below the player**(\*). Once the maximum altitude is reached, the Jet Pack will no longer provide upward thrust and you will **hover** around the max altitude.
 
 \*Leaves are not counted as ground.
+
+> 🔋 The remaining fuel is shown as the **durability bar** of the Jet Pack, and in the **action bar** together with the current flight mode.
+
 ---
 
 ### Tier 1
 
-- ⛽ **Fuel:** 1 minute
+- ⛽ **Fuel:** 2 minutes
 - ⚡ **Speed:** Low
 - 📏 **Maximum altitude:** 15 blocks above ground
 
@@ -73,7 +104,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ### Tier 2
 
-- ⛽ **Fuel:** 15 minutes
+- ⛽ **Fuel:** 5 minutes
 - ⚡ **Speed:** Medium-low
 - 📏 **Maximum altitude:** 30 blocks above ground
 
@@ -85,7 +116,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ### Tier 3
 
-- ⛽ **Fuel:** 30 minutes
+- ⛽ **Fuel:** 10 minutes
 - ⚡ **Speed:** Medium
 - 📏 **Maximum altitude:** 40 blocks above ground
 
@@ -97,7 +128,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ### Tier 4
 
-- ⛽ **Fuel:** 45 minutes
+- ⛽ **Fuel:** 20 minutes
 - ⚡ **Speed:** Medium-high
 - 📏 **Maximum altitude:** 70 blocks above ground
 
@@ -109,7 +140,7 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 
 ### Tier 5
 
-- ⛽ **Fuel:** 1 hour
+- ⛽ **Fuel:** 40 minutes
 - ⚡ **Speed:** High
 - 📏 **Maximum altitude:** 100 blocks above ground
 
@@ -118,6 +149,8 @@ Each tier also has its own **custom color**, making it easy to distinguish betwe
 ![Craft of the tier 5 JetPack](https://cdn.modrinth.com/data/cached_images/1a2f974b8a0be14266fa08e0479f41fbe553f52c.png)
 
 > **Recipe Update:** The Tier 5 Jet Pack recipe now requires **3 Dragon's Breath**.
+
+> ℹ️ Fuel durations above are for **continuous use**. Fuel is consumed depending on the selected **flight mode** (see below), so higher modes burn fuel faster.
 
 ---
 
@@ -139,9 +172,25 @@ A special Jet Pack intended for creative use.
 ### 🕹️ Usage
 
 - Equip the Jet Pack in your **chestplate slot**.
-- **Sneak** to activate it.
-- Stop sneaking to descend with **Slow Falling**.
+- **Hold jump** to ascend.
+- **Sneak** to cycle through the **flight modes**.
+- Stop thrusting to descend with **Slow Falling**.
+
 > **Tip:** if Slow Falling is **too slow** for you, consider **switching** to your **normal** chestplate to descend **faster** and **switch** back **just before** hitting the ground (-> *no fall damage, but normal fall speed!*)
+
+### ⚙️ Flight Modes
+
+Sneaking cycles through five flight modes. The current mode is displayed in the fuel **action bar**.
+
+| Mode | Ascend power | Notes |
+|---|---|---|
+| 0 | Hover | Hold your altitude, lowest fuel consumption |
+| 1 | 25% | |
+| 2 | 50% | |
+| 3 | 75% | |
+| 4 | 100% | Fastest ascent, highest fuel consumption |
+
+> 💡 The **higher the mode**, the **more fuel** you burn. Pick a lower mode to make your fuel last longer.
 
 ---
 
