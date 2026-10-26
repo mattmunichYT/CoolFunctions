@@ -27,9 +27,17 @@
       ],
       "minecraft:custom_data": {
         "jetpack": true,
-        "jetpackFuel": 18000,
-        "jetpackMaxFuel": 18000,
+        "jetpackFuel": 6000,
+        "jetpackMaxFuel": 6000,
         "jetpackTier": 2
+      },
+      "minecraft:max_damage": 6000,
+      "minecraft:damage": 0,
+      "minecraft:equippable": {
+        "slot": "chest",
+        "equip_sound": {"sound_id": "minecraft:none", "range": 0.1},
+        "asset_id": "minecraft:chestplate",
+        "damage_on_hurt": false
       },
       "minecraft:dyed_color": [1, 0.67, 0]
     },

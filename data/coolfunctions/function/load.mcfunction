@@ -1,6 +1,16 @@
 scoreboard objectives add cf.sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cf.jetpack.mode dummy
+scoreboard objectives add cf.jetpack.amp dummy
+scoreboard objectives add cf.jetpack.display dummy
+#Modes:
+# 0 = hover
+# 1 = ascend 25%
+# 2 = ascend 50%
+# 3 = ascend 75%
+# 4 = ascend 100% 
 scoreboard objectives add cf.jetpack.fuel dummy
 scoreboard objectives add cf.jetpack.fuel.max dummy
+scoreboard objectives add cf.jetpack.burn dummy
 scoreboard objectives add cf.jetpack.bar dummy
 scoreboard objectives add cf.jetpack.temp dummy
 scoreboard objectives add cf.const dummy

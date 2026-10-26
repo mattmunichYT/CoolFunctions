@@ -16,7 +16,6 @@
       "type": "text",
       "color": "#e392fe"
     },
-    "background": "minecraft:block/end_stone",
     "frame": "goal",
     "show_toast": true
   },

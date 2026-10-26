@@ -19,7 +19,6 @@
       "text": "§eObtain §2a §6Jet§4Pack",
       "type": "text"
     },
-    "background": "minecraft:block/end_stone",
     "frame": "task",
     "show_toast": true
   },

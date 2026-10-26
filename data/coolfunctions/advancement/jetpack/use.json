@@ -12,7 +12,6 @@
       "text": "§eUse §2the §6Jet§4Pack §2to §efly",
       "type": "text"
     },
-    "background": "minecraft:block/end_stone",
     "frame": "goal",
     "show_toast": true
   },

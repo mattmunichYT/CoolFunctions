@@ -12,7 +12,6 @@
       "text": "§eObtain §dan §5Ender§eBow",
       "type": "text"
     },
-    "background": "minecraft:block/end_stone",
     "frame": "task",
     "show_toast": true
   },
