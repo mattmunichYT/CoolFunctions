@@ -22,8 +22,11 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:bow",count:1,components:{"minecra
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}] run tag @s remove hasEnderBow
 
 #Bow
-execute as @a[tag=hasEnderBow] run item replace entity @s weapon.offhand with arrow[item_model="coolfunctions:ender_arrow",item_name=[{"color":"#1E14A6",text:"E"},{"color":"#321DAF",text:"n"},{"color":"#4626B8",text:"d"},{"color":"#5A2FC1",text:"e"},{"color":"#6E38CA",text:"r "},{"color":"#8341D3",text:"A"},{"color":"#974ADB",text:"r"},{"color":"#AB53E4",text:"r"},{"color":"#BF5CED",text:"o"},{"color":"#E76EFF",text:"w"}],custom_data={ender_arrow:true}] 1 
+# While an Ender Bow is held: whatever sits in the offhand (shield, totem...) is stashed, then the Ender Arrow takes its place
+execute as @a[tag=hasEnderBow] unless items entity @s weapon.offhand *[minecraft:custom_data~{ender_arrow:true}] at @s run function coolfunctions:enderbow/equip
+# Ender Bow no longer held: remove the Ender Arrow and give the stashed item back
 execute as @a[tag=!hasEnderBow] run clear @s minecraft:arrow[minecraft:custom_data={ender_arrow:true}]
+execute as @a[tag=!hasEnderBow,tag=cf.enderMode] at @s run function coolfunctions:enderbow/restore
 
 execute as @a[nbt={RootVehicle:{Entity:{id:"minecraft:arrow",weapon:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}}}] run advancement grant @s only coolfunctions:ender_bow/use
 execute as @a[nbt={RootVehicle:{Entity:{id:"minecraft:arrow",weapon:{id:"minecraft:bow",count:1,components:{"minecraft:custom_data":{ender_bow:true}}}}}}] run data merge entity @e[type=minecraft:arrow,limit=1,distance=..3,sort=furthest] {pickup:0b}

@@ -1,9 +1,25 @@
 {
   "pack": {
-    "description": "§2Cool §6Functions §av1.5.4.2 §7- §8MC 1.21.6-26.3",
+    "description": "§2Cool §6Functions §av1.6 §7- §8MC 1.21.6-26.3",
     "pack_format": 80,
     "supported_formats": [80, 121],
     "min_format": 80,
     "max_format": 121
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "jump_predicate_1_21_6_to_26_1_2",
+        "formats": [80, 102],
+        "min_format": 80,
+        "max_format": 102
+      },
+      {
+        "directory": "jump_predicate_26_2",
+        "formats": [107, 107],
+        "min_format": 107,
+        "max_format": 107
+      }
+    ]
   }
 }

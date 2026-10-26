@@ -1,3 +1,14 @@
 /.DS_Store
 /.vscode
 /CoolFunctions-Essentials.code-workspace
+data/.DS_Store
+data/coolfunctions/.DS_Store
+data/coolfunctions/function/.DS_Store
+data/coolfunctions/function/enderbow/.DS_Store
+data/minecraft/.DS_Store
+data/minecraft/tags/.DS_Store
+jump_predicate_1_21_6_to_26_1_2/.DS_Store
+jump_predicate_1_21_6_to_26_1_2/data/.DS_Store
+jump_predicate_26_2/.DS_Store
+jump_predicate_26_2/data/.DS_Store
+*.DS_Store

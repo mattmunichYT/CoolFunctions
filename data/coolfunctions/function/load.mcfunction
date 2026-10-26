@@ -1,4 +1,5 @@
 scoreboard objectives add cf.sneaking minecraft.custom:minecraft.sneak_time
+scoreboard objectives add cf.id dummy
 scoreboard objectives add cf.jetpack.mode dummy
 scoreboard objectives add cf.jetpack.amp dummy
 scoreboard objectives add cf.jetpack.display dummy
