@@ -11,4 +11,5 @@ jump_predicate_1_21_6_to_26_1_2/.DS_Store
 jump_predicate_1_21_6_to_26_1_2/data/.DS_Store
 jump_predicate_26_2/.DS_Store
 jump_predicate_26_2/data/.DS_Store
-*.DS_Store
+.DS_Store
+**/.DS_Store
